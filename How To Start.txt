@@ -4,7 +4,7 @@ npm i express --save express
 npm i nodemon --save-dev
 npm i mongodb
 npm i dotenv --save
-
+touch .gitignore
 
 ================================= Git Repository ================================= 
 - Create New Repository
