@@ -24,11 +24,23 @@ DELETE http://localhost:8080/contacts/63385c82e22f41b5800e11d8 HTTP/1.1
 
 
 // PRODUCTION Deploy
-### 
-GET https://cse-341-w02.onrender.com/contacts
-### 
-GET https://cse-341-w02.onrender.com/contacts/632f87066354770fc88f0288
-### 
-GET https://cse-341-w02.onrender.com/contacts/632f87066354770fc88f0289
-### 
-GET https://cse-341-w02.onrender.com/contacts/632f87066354770fc88f028a
+### GET ALL CONTACTS
+GET https://cse-341-w03.onrender.com/contacts
+### GET CONTACT BY ID
+GET https://cse-341-w03.onrender.com/contacts/632f87066354770fc88f0288
+### CREATE CONTACT
+GET https://cse-341-w03.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"TestFirstName", "lastName":"TestLastName", "email":"Create@test.com", "favoriteColor":"Test", "birthday":"06/19/2000"
+}
+### UPDATE CONTACT 
+PUT https://cse-341-w03.onrender.com/contacts/63385c82e22f41b5800e11d8 HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"TestFirstUpdate", "lastName":"TestLastUpdate", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+}
+### DELETE contact
+DELETE https://cse-341-w03.onrender.com/contacts/63385c82e22f41b5800e11d8 HTTP/1.1
